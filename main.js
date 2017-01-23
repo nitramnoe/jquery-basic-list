@@ -39,4 +39,4 @@ $.each(books, function(){
   $(".info"+ n).append("<h3>"+books[n].type + "</h3>");
   $(".info"+ n).append("<a href=\""+books[n].link + "\">More</a>");
   n = n + 1;
-})
+});

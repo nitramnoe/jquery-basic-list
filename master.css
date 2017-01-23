@@ -4,7 +4,7 @@
   font-family: futura;
   font-weight: 200;
   color: white;
-  text-shadow: 0 0 5px rgba(167, 167, 167, 0.5)
+  text-shadow: 0 0 5px rgba(167, 167, 167, 0.5);
 }
 body{
   display: flex;
@@ -22,20 +22,24 @@ body{
 }
 .books h1{
   text-align: center;
+  letter-spacing: 1px;
 }
 .books{
   border-bottom: 2px solid white;
   padding: 20px;
 }
 .books .infos{
-  display: none;
-  transition:opacity 2s ease;
+  height: 0;
+  opacity: 0;
+  display: flex;
+  transition: opacity 1s ease, height 1s ease;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 .books:hover .infos{
-  display: flex;
+  height: 100px;
+  opacity: 1;
 }
 a{
   text-decoration: none;
